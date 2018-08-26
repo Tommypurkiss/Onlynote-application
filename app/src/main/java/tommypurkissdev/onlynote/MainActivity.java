@@ -1,4 +1,4 @@
-package tommypurkissdev.simplenotes;
+package tommypurkissdev.onlynote;
 
 import android.app.AlertDialog;
 import android.app.LoaderManager;
@@ -21,12 +21,18 @@ import android.widget.CursorAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import tommypurkissdev.simplenotes.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
+
+import tommypurkissdev.onlynote.R;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
     private static final int EDITOR_REQUEST_CODE = 1001;
     private CursorAdapter cursorAdapter;
+    private AdView mAdView;
 
 
     @Override
@@ -35,6 +41,11 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        MobileAds.initialize(this, "ca-app-pub-9479719882402186~5737914558");
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

@@ -1,4 +1,4 @@
-package tommypurkissdev.simplenotes;
+package tommypurkissdev.onlynote;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

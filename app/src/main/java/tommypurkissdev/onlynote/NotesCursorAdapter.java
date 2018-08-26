@@ -1,4 +1,4 @@
-package tommypurkissdev.simplenotes;
+package tommypurkissdev.onlynote;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
 
-import tommypurkissdev.simplenotes.R;
+import tommypurkissdev.onlynote.R;
 
 public class NotesCursorAdapter extends CursorAdapter {
 

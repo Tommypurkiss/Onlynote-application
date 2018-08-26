@@ -1,4 +1,4 @@
-package tommypurkissdev.simplenotes;
+package tommypurkissdev.onlynote;
 
 import android.content.ContentValues;
 import android.content.Intent;
@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import tommypurkissdev.simplenotes.R;
+import tommypurkissdev.onlynote.R;
 
 public class EditorActivity extends AppCompatActivity {
 

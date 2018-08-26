@@ -1,4 +1,4 @@
-package tommypurkissdev.simplenotes;
+package tommypurkissdev.onlynote;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -11,7 +11,7 @@ import android.support.annotation.NonNull;
 public class NotesProvider extends ContentProvider{
 
 
-    private static final String AUTHORITY = "tommypurkissdev.simplenotes";
+    private static final String AUTHORITY = "tommypurkissdev.onlynote";
     private static final String BASE_PATH = "notes";
     public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/" + BASE_PATH );
 

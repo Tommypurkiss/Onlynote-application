@@ -1,11 +1,11 @@
-package tommypurkissdev.simplenotes;
+package tommypurkissdev.onlynote;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
-import tommypurkissdev.simplenotes.R;
+import tommypurkissdev.onlynote.R;
 
 public class AboutActivity extends AppCompatActivity {
 
