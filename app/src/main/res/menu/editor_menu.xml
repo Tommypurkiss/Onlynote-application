@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="tommypurkissdev.simplenotes.tommypurkissdev.simplenotes.EditorActivity">
+    tools:context="tommypurkissdev.onlynote.tommypurkissdev.onlynote.EditorActivity">
 
     <item
         android:id="@+id/action_delete"

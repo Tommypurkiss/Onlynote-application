@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="tommypurkissdev.simplenotes">
+    package="tommypurkissdev.onlynote">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
 
     <application
         android:allowBackup="true"
@@ -12,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="tommypurkissdev.simplenotes.MainActivity"
+            android:name="tommypurkissdev.onlynote.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -23,28 +27,28 @@
         </activity>
 
         <provider
-            android:name="tommypurkissdev.simplenotes.NotesProvider"
-            android:authorities="tommypurkissdev.simplenotes"
+            android:name="tommypurkissdev.onlynote.NotesProvider"
+            android:authorities="tommypurkissdev.onlynote"
             android:exported="false" />
 
         <activity
-            android:name="tommypurkissdev.simplenotes.EditorActivity"
+            android:name="tommypurkissdev.onlynote.EditorActivity"
             android:label="@string/title_activity_editor"
-            android:parentActivityName="tommypurkissdev.simplenotes.MainActivity"
+            android:parentActivityName="tommypurkissdev.onlynote.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             tools:targetApi="jelly_bean">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="tommypurkissdev.simplenotes.tommypurkissdev.simplenotes.MainActivity" />
+                android:value="tommypurkissdev.onlynote.MainActivity" />
         </activity>
         <activity
-            android:name="tommypurkissdev.simplenotes.AboutActivity"
+            android:name="tommypurkissdev.onlynote.AboutActivity"
             android:label="@string/title_activity_about"
-            android:parentActivityName="tommypurkissdev.simplenotes.MainActivity"
+            android:parentActivityName="tommypurkissdev.onlynote.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="tommypurkissdev.simplenotes.tommypurkissdev.simplenotes.MainActivity" />
+                android:value="tommypurkissdev.onlynote.MainActivity" />
         </activity>
     </application>
 

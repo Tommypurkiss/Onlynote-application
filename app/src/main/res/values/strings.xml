@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Simple Notes</string>
+    <string name="app_name">Onlynote</string>
     <string name="delete_all_notes">Delete all notes</string>
     <string name="are_you_sure">Are you sure?</string>>
     <string name="all_deleted">All Notes Deleted!</string>
-    <string name="title_activity_editor">EditorActivity</string>
+    <string name="title_activity_editor">My Note</string>
     <string name="new_note">New Note</string>
     <string name="note_updated">Note Updated</string>
     <string name="delete">Delete</string>
@@ -14,14 +14,14 @@
     <string name="title_activity_about">About</string>
     <string name="about_text">
         \nAbout:
-        \nHello and welcome to Simple Notes.
+        \nHello and welcome to Onlynote.
         \nThis app was made for note taking to be easy.
         \nEnjoy your time using this app!
-        \nThis app uses local storage so uninstalling may delete all of your notes!
+        \nThis app uses local storage so uninstalling will delete all of your notes!
         \n
         \n
         \nVersion:
-        \n1.0
+        \n4.0
         \n
         \nContact:
         \ntommypurkissdev@gmail.com
